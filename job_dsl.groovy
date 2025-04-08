@@ -3,6 +3,7 @@ folder('Tools') {
   description('Folder for miscellaneous tools.')
 }
 
+// remove starting here if no repo to test
 freeStyleJob('Tools/clone-repository') {
   parameters {
     stringParam("GIT_REPOSITORY_URL", "", "Git URL of the repository to clone")
